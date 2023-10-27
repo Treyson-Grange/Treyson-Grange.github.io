@@ -1,0 +1,22 @@
+body {
+    background-color: #3a0057; /* Dark purple background */
+    color: #dad7cd; /* Light text color */
+}
+
+div {
+    padding: 15px;
+    margin: 15px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: #8a60a3; /* Purple border color */
+    border-width: 10px;
+    background-color: #45274e; /* Darker purple background for div */
+    color: #b4b4b4; /* Light text color */
+}
+
+.titleDiv {
+    text-align: center;
+    font-size: 40px;
+    font-style: oblique;
+    color: #c3c5be; /* Light green text color for the title */
+}
