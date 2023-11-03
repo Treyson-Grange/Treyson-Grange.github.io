@@ -16,9 +16,9 @@ jobs:
       - name: Build and deploy
         run: |
           # Inject the API key as an environment variable in your JavaScript code
-          echo "window.API_KEY='${{ secrets.OPEN_AI_API }}';" > config/env.js
+          echo "window.API_KEY='${{ secrets.OPEN_AI_API }}';" > public/env.js
           # Build your project
-          npm run build
+          # npm run build
         env:
           API_KEY: ${{ secrets.OPEN_AI_API }}
 
