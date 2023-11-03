@@ -17,11 +17,11 @@ function handleSubmit(event) {
 async function chatCall(event) {
     event.preventDefault();
     let chatbox = document.getElementById('chat-output');
-    chatbox.innerHTML = "Loading..."
+    chatbox.innerHTML = "Loading...";
     let taskInfo = document.getElementById('task-info').value.toString();
     let taskName = document.getElementById('chat-name').value.toString();
     let pageName = document.getElementById('page-name')
-    let API = window.OPEN_AI_API;
+    let API = window.API_KEY;
     console.log(API);
     const options = {
         method: 'POST',
