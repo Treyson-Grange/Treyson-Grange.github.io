@@ -10,13 +10,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Debug API Key Secret
+        run: |
+          echo "API key secret: ${{ secrets.OPEN_AI_API }}"
+          
       - name: Checkout code
         uses: actions/checkout@v2
 
       - name: Build and deploy
         run: |
           echo "window.API_KEY='${{ secrets.OPEN_AI_API }}';" > public/env.js
-          
-        env:
-          API_KEY: ${{ secrets.OPEN_AI_API }}
-
