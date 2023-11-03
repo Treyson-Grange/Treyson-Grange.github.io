@@ -13,9 +13,6 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Install dependencies
-        run: npm install
-
       - name: Build and deploy
         run: |
           # Inject the API key as an environment variable in your JavaScript code
