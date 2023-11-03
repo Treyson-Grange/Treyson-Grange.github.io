@@ -13,19 +13,15 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: 14
-
       - name: Install dependencies
         run: npm install
 
       - name: Build and deploy
         run: |
           # Inject the API key as an environment variable in your JavaScript code
-          echo "window.API_KEY='${{ secrets.API_KEY }}';" > public/env.js
+          echo "window.API_KEY='${{ secrets.OPEN_AI_API }}';" > config/env.js
           # Build your project
           npm run build
         env:
-          OPEN_AI_API: ${{ secrets.OPEN_AI_API }}
+          API_KEY: ${{ secrets.OPEN_AI_API }}
+
