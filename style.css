@@ -1,5 +1,5 @@
 body {
-    /* Define the gradient colors and direction */
+    
     background: linear-gradient(45deg, #C724B1, #71DBD4);
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -8,9 +8,9 @@ body {
 }
 .text-box {
     color: #000;
-    background-color: #f2f2f2; /* Background color of the box */
-    padding: 20px; /* Add padding to create space around the text */
-    border-radius: 10px; /* Add rounded corners to the box */
+    background-color: #f2f2f2; 
+    padding: 20px; 
+    border-radius: 10px;
     font-size: 15pt;
 
 }
@@ -19,21 +19,34 @@ body {
     color: #000;
     margin-top: 50px;
 }
-/* Make it *sticky* */
+
 .navbar { 
     margin-bottom: 200px;
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1000; /* To ensure it appears above other content */
-    /* Add any additional styling you want for your navbar */
+    z-index: 1000; 
 }
-/* Style for the boxes behind each column */
+
 .col-box {
     color: #000;
-    background-color: #f0f0f0; /* Background color */
-    padding: 10px; /* Add padding to create space between content and box */
-    border: 1px solid #ccc; /* Border */
-    border-radius: 5px; /* Rounded corners */
-    height: 100%; /* Ensure the box expands to match the column's height */
+    background-color: #f0f0f0;
+    padding: 10px; 
+    border: 1px solid #ccc;
+    border-radius: 5px; 
+    height: 100%;
+}
+.footer {
+    color: #000;
+    background-color: #fff;
+}
+#footer {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #ffffff;
+    color: #000000;
+    text-align: center;
+    padding: 10px;
 }
