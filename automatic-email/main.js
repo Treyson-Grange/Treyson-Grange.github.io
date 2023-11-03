@@ -17,12 +17,11 @@ function handleSubmit(event) {
 async function chatCall(event) {
     event.preventDefault();
     let chatbox = document.getElementById('chat-output');
-    chatbox.innerHTML = "Loading...";
+    chatbox.innerHTML = "Loading..."
     let taskInfo = document.getElementById('task-info').value.toString();
     let taskName = document.getElementById('chat-name').value.toString();
     let pageName = document.getElementById('page-name')
-    let API = window.OPEN_AI_API;
-    console.log(API);
+    let API = 1;
     const options = {
         method: 'POST',
         headers: {
@@ -32,7 +31,7 @@ async function chatCall(event) {
         },
         body: JSON.stringify({
             model: "gpt-3.5-turbo",
-            messages: [{role: "user", content: `Write a simple email responding to this request: ${taskInfo} and have the email reach out to ${taskName} and say that the changes are made and live on the ${pageName}`}],
+            messages: [{role: "user", content: `Write a email responding to this request: ${taskInfo} and have the email reach out to ${taskName} and say that the changes are made and live on the ${pageName}`}],
             max_tokens: 100
         })
     }

@@ -5,15 +5,22 @@ on:
     branches:
       - master
 env:
-  OPEN_AI_API: ${{ secrets.OPEN_AI_API }}
+  OPEN_AI_API: ${{ secrets.OPEN_API }}
 jobs:
-  build:
+  top-secret:
     runs-on: ubuntu-latest
+    env:
+      OPEN_API: ${{ secrets.OPEN_API }}
 
     steps:
       - name: Debug API Key Secret
         run: |
           echo "API key secret: ${{ secrets.OPEN_AI_API }}"
-          
+      - name: Get Secret
+        run: echo 
+      
+      - name: Test Secret
+        run: echo "it is ${{ env.OPEN_API }}"
+
       - name: Checkout code
         uses: actions/checkout@v2
