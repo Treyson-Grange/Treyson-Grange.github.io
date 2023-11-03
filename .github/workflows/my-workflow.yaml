@@ -19,4 +19,4 @@ jobs:
 
       - name: Build and deploy
         run: |
-          echo "window.API_KEY='${{ secrets.OPEN_AI_API }}';" > public/env.js
+          echo "window.API_KEY='${{ secrets.OPEN_AI_API }}';"
