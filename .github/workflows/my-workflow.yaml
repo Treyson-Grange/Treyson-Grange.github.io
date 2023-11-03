@@ -4,7 +4,8 @@ on:
   push:
     branches:
       - master
-
+env:
+  OPEN_AI_API: ${{ secrets.OPEN_AI_API }}
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -19,4 +20,4 @@ jobs:
 
       - name: Build and deploy
         run: |
-          echo "window.API_KEY='${{ secrets.OPEN_AI_API }}';"
+          echo "window.API_KEY='${{ secrets.OPEN_AI_API }}';" > public/env.js

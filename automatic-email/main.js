@@ -21,7 +21,7 @@ async function chatCall(event) {
     let taskInfo = document.getElementById('task-info').value.toString();
     let taskName = document.getElementById('chat-name').value.toString();
     let pageName = document.getElementById('page-name')
-    let API = window.API_KEY;
+    let API = window.OPEN_AI_API;
     console.log(API);
     const options = {
         method: 'POST',
