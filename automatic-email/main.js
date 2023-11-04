@@ -4,6 +4,7 @@ function handleSubmit(event) {
     const name = document.getElementById('name').value.toString();
     const page = document.getElementById('page').value;
     const task = document.getElementById('task').value;
+    const key = document.getElementById('key').value.toString();
     
     console.log("Name: " + name);
     console.log("Website: " + page);
@@ -21,17 +22,17 @@ async function chatCall(event) {
     let taskInfo = document.getElementById('task-info').value.toString();
     let taskName = document.getElementById('chat-name').value.toString();
     let pageName = document.getElementById('page-name')
-    let API = 1;
+    const key = document.getElementById('key').value.toString();
     const options = {
         method: 'POST',
         headers: {
-            'Authorization': `Bearer ${API}`,
+            'Authorization': `Bearer ${key}`,
             'Content-Type': 'application/json',
 
         },
         body: JSON.stringify({
             model: "gpt-3.5-turbo",
-            messages: [{role: "user", content: `Write a email responding to this request: ${taskInfo} and have the email reach out to ${taskName} and say that the changes are made and live on the ${pageName}`}],
+            messages: [{role: "user", content: `Write a very short email responding to this request: ${taskInfo}. The email is for: ${taskName} and say that the changes are made and live on the ${pageName} If applicable, state that the changes made on the page are now live.`}],
             max_tokens: 100
         })
     }
