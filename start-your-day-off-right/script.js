@@ -29,13 +29,18 @@ fetch(URL)
 //Second get inspiration
 let URL4insp = 'https://type.fit/api/quotes';//Might have to drop this api, weird error
 let inspireJson;
+try {
+    
+} catch (error) {
+    
+}
 fetch(URL4insp)
     .then(function(response) {
         return response.json();
     })
     .then(function(data) {
         inspireJson = data;
-        i = Math.floor(Math.random() * 1600);
+        i = Math.floor(Math.random() * 15);
         let div = document.querySelector("#inspiration");
         div.textContent =  inspireJson[i].text
     
@@ -60,7 +65,7 @@ fetch(ipURL)
                 return fetch(cwdAPI);
             })
             .catch(err => {
-                // this.location = "There was an error getting your location" + err;
+                this.location = "There was an error getting your location" + err;
             })
             .then(j => j.json())
             .then(json => {
@@ -81,20 +86,3 @@ fetch(ipURL)
                 
             })
         
-// ***CODE DUNGEON*** //
-
-// fetch(URL4insp, { headers: {'Access-Control-Allow-Origin:': '*'},})
-//     .then( responses => responses.json())
-//     .then( json => {
-//         inspireJson = json;
-//         console.log(inspireJson)
-//     })
-//     .catch( err => {
-//         let message = 'Request to advice API did not work';
-//         document.querySelector("#inspiration").textContent = message + " " + err;
-//    })
-//     .finally(() => {
-//         console.log(inspireJson);
-//         let inspiration = "inspireJson.q;"
-//         //document.querySelector("#inspiration").textContent = inspiration;
-//     })

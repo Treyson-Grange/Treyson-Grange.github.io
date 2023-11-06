@@ -1,9 +1,9 @@
-body {
+.bodyy {
     background-color: #3a0057; /* Dark purple background */
     color: #dad7cd; /* Light text color */
 }
 
-div {
+.divv {
     padding: 15px;
     margin: 15px;
     border-style: solid;
