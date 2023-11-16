@@ -1,4 +1,9 @@
 //Get Date
+
+
+/*
+Set up Variables for Date
+*/
 var today = new Date();
 var dd = String(today.getDate()).padStart(2, '0');
 var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
@@ -10,7 +15,9 @@ let time = hours + ":" + minutes;
 if(hours > 12) {document.querySelector("#timeOfDay").textContent = "Good Afternoon~!"}
 else {document.querySelector("#timeOfDay").textContent = "Good Morning~!"}
 document.querySelector("#date").textContent = "The time is " + time + " and the date is " + date;
-//get advice
+/*
+    API Call for advice.
+*/
 let adviceJson;
 let URL = 'https://api.adviceslip.com/advice';
 fetch(URL)
@@ -26,31 +33,31 @@ fetch(URL)
         let advice = adviceJson.slip.advice;
         document.querySelector("#advice").textContent = advice;
     })
-//Second get inspiration
-let URL4insp = 'https://type.fit/api/quotes';//Might have to drop this api, weird error
+/*
+    API Call for insipiration
+*/
+let URL4insp = 'https://type.fit/api/quotes';
 let inspireJson;
-try {
-    
-} catch (error) {
-    
-}
 fetch(URL4insp)
     .then(function(response) {
         return response.json();
     })
     .then(function(data) {
         inspireJson = data;
+        //API Returns 16 different quotes. Get one
         i = Math.floor(Math.random() * 15);
         let div = document.querySelector("#inspiration");
-        div.textContent =  inspireJson[i].text
-    
+        div.textContent =  inspireJson[i].text;
+
     })
     .catch( err => {
         document.querySelector("#inspiration").textContent = err;
     })
 
 
-//Lastly get weather
+/*
+    API Call for weather
+*/
 
 let ipURL = 'https://ipgeolocation.abstractapi.com/v1/?api_key=7b471cc3e4dc4a8da8077fa56e802dd5'
 fetch(ipURL)
@@ -65,7 +72,7 @@ fetch(ipURL)
                 return fetch(cwdAPI);
             })
             .catch(err => {
-                this.location = "There was an error getting your location" + err;
+                this.location = "There was an error getting your location:" + err;
             })
             .then(j => j.json())
             .then(json => {
@@ -82,7 +89,5 @@ fetch(ipURL)
                 document.querySelector("#conditions").innerHTML = conditions;
                 document.querySelector("#humidity").innerHTML = humidity;
                 document.querySelector("#hPa").innerHTML = hPa;
-
-                
             })
         

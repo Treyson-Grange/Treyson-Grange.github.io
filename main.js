@@ -1,8 +1,14 @@
+/** 
+ * Function isScrolledToBottom
+ * Input: None
+ * Output: Boolean 
+*/
 function isScrolledToBottom() {
+    console.log(window.innerHeight + window.scrollY >= document.body.offsetHeight);
     return window.innerHeight + window.scrollY >= document.body.offsetHeight;
 }
 
-// Show the footer when scrolling to the bottom
+//Set up event listener for the footer.
 window.addEventListener('scroll', function () {
     if (isScrolledToBottom()) {
         document.getElementById('footer').style.display = 'block';
