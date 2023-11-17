@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     // Set the past event time (replace with your desired past time)
-    const pastEventTime = new Date("2023-11-16T12:00:00").getTime();
+    const pastEventTime = new Date("2023-11-16T15:45:00").getTime();
 
     // Update the timer every second
     const timerInterval = setInterval(updateTimer, 1000);
