@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(45deg, #C724B1, #71DBD4);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: #fff; 
+
+}
+.timer-container {
+    color: #000000;
+    text-align: center;
+    margin: 15pt;
+    padding: 15pt;
+    background-color: #fff;
+    border-radius: 10px;
+    border-color: #C724B1;
+    border: #000000;
+}
+#timer {
+    font-size: 2em;
+    margin-top: 20px;
+}
