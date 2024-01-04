@@ -1,54 +1,50 @@
 body {
-    background: linear-gradient(45deg, #C724B1, #71DBD4);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    color: #fff; 
+  background: linear-gradient(45deg, #c724b1, #71dbd4);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  color: #fff;
 }
 .text-box {
-    color: #000;
-    background-color: #f2f2f2; 
-    padding: 20px; 
-    border-radius: 10px;
-    font-size: 15pt;
+  color: #000;
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 15pt;
 }
 .hero {
-    background-color: #fff;
-    color: #000;
-    margin-top: 50px;
+  background-color: #fff;
+  color: #000;
+  margin-top: 50px;
 }
 
-.navbar { 
-    margin-bottom: 200px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000; 
+.navbar {
+  margin-bottom: 200px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 .col-box {
-    color: #000;
-    background-color: #f0f0f0;
-    padding: 10px; 
-    border: 1px solid #ccc;
-    border-radius: 5px; 
-    height: 100%;
+  color: #000;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  height: 100%;
 }
 .footer {
-    color: #000;
-    background-color: #fff;
+  color: #000;
+  background-color: #fff;
 }
 #footer {
-    display: none;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background-color: #ffffff;
-    color: #000000;
-    text-align: center;
-    padding: 10px;
-
-
-
-
+  display: none;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #ffffff;
+  color: #000000;
+  text-align: center;
+  padding: 10px;
 }
