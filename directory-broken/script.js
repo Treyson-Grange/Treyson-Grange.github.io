@@ -1,3 +1,7 @@
+// Timer set up
+// Given a Date object, calculate time since then and display it on page
+// Input none
+// Output none
 document.addEventListener("DOMContentLoaded", function () {
     // Set the past event time (replace with your desired past time)
     const pastEventTime = new Date("2023-11-16T15:45:00").getTime();

@@ -1,5 +1,6 @@
 /**
  * Function isScrolledToBottom
+ * Footer listener.
  * Input: None
  * Output: Boolean
  */
