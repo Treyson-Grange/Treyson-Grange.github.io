@@ -52,6 +52,16 @@ body {
   text-align: center;
   padding: 10px;
 }
+body,
+.nav-item .nav-link,
+.site-title,
+.text-box,
+.col-box,
+#footer,
+.navbars,
+.hero {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
 body.dark-mode,
 body.dark-mode .nav-item .nav-link,
 body.dark-mode .site-title,
@@ -61,6 +71,7 @@ body.dark-mode #footer,
 body.dark-mode .navbars,
 body.dark-mode .hero {
   color: #fff;
+  transition: background-color 0.7s ease, color 0.7s ease; /* Add transitions */
 }
 
 body.dark-mode {
