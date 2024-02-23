@@ -5,6 +5,10 @@ body {
   background-size: cover;
   color: #fff;
 }
+.navbars {
+  background-color: #fff;
+  color: #000;
+}
 .text-box {
   color: #000;
   background-color: #f2f2f2;
@@ -47,4 +51,47 @@ body {
   color: #000000;
   text-align: center;
   padding: 10px;
+}
+body.dark-mode,
+body.dark-mode .nav-item .nav-link,
+body.dark-mode .site-title,
+body.dark-mode .text-box,
+body.dark-mode .col-box,
+body.dark-mode #footer,
+body.dark-mode .navbars,
+body.dark-mode .hero {
+  color: #fff;
+}
+
+body.dark-mode {
+  background: linear-gradient(45deg, #6a0b72, #1a7c82);
+  background-color: #111;
+}
+
+body.dark-mode .text-box {
+  background-color: #222;
+}
+
+body.dark-mode .col-box {
+  background-color: #333;
+  border: 1px solid #000;
+}
+
+body.dark-mode #footer,
+body.dark-mode .navbars,
+body.dark-mode .hero {
+  background-color: #333;
+}
+
+/* Icon color */
+.fa-fix {
+  color: black; /* Or any other color that contrasts with your background */
+}
+body.dark-mode .fa-fix {
+  color: #fff; /* Or any other color that contrasts with your background */
+}
+
+/* Toggle button */
+.toggle-button {
+  margin-right: 20px; /* Adjust the margin as needed */
 }
