@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <title>JS Maze</title>
     <script src="main.js"></script>
+    <link rel="stylesheet" href="../../style.css" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -21,6 +22,10 @@
         height: 100%;
         margin: 0;
         overflow: hidden;
+      }
+      body.dark-mode .rounded-box {
+        background-color: #333;
+        color: #fff;
       }
     </style>
   </head>
@@ -42,6 +47,13 @@
               1: 5x5, 2: 10x10, 3: 15x15, 4: 20x20<br />
               B: Breadcrumbs | H: Hint | P: Show Solution
             </p>
+            <div id="dark-mode-toggle" class="toggle-button">
+              <i class="px-5 py-1 fa-fix fa-solid fa-moon fa-2x"></i>
+              <i
+                class="px-5 py-1 fa-fix fa-fix fa-solid fa-sun fa-2x"
+                style="display: none"
+              ></i>
+            </div>
           </div>
         </div>
         <div style="text-align: center">
@@ -54,6 +66,12 @@
         </div>
       </div>
     </div>
+    <script src="../../darkmode.js"></script>
+    <script src="../../main.js"></script>
+    <script
+      src="https://kit.fontawesome.com/ce1945717a.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

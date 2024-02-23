@@ -71,11 +71,11 @@ body.dark-mode #footer,
 body.dark-mode .navbars,
 body.dark-mode .hero {
   color: #fff;
-  transition: background-color 0.7s ease, color 0.7s ease; /* Add transitions */
+  transition: background-color 0.7s ease, color 0.7s ease;
 }
 
 body.dark-mode {
-  background: linear-gradient(45deg, #6a0b72, #1a7c82);
+  background: linear-gradient(90deg, #6a0b72, #1a7c82);
   background-color: #111;
 }
 
@@ -94,15 +94,13 @@ body.dark-mode .hero {
   background-color: #333;
 }
 
-/* Icon color */
 .fa-fix {
-  color: black; /* Or any other color that contrasts with your background */
+  color: black;
 }
 body.dark-mode .fa-fix {
-  color: #fff; /* Or any other color that contrasts with your background */
+  color: #fff;
 }
 
-/* Toggle button */
 .toggle-button {
-  margin-right: 20px; /* Adjust the margin as needed */
+  margin-right: 20px;
 }

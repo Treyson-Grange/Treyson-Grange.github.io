@@ -1,59 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/ce1945717a.js" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <title>Plant Tracker</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/ce1945717a.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>    
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    
-</head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light ml-2">
-        <a class="navbar-brand mx-5" href="/index#">Treyson Grange</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a style="padding-left: 20pt;" class="nav-link" href="/index.html#about">About</a>
-                </li>
-                <li class="nav-item">
-                    <a style="padding-left: 20pt;"  class="nav-link" href="/index.html#experience">Experience</a>
-                </li>
-                <li class="nav-item">
-                    <a style="padding-left: 20pt;"  class="nav-link" href="/index.html#portfolio">Portfolio</a>
-                </li>
-                <li class="nav-item">
-                    <a style="padding-left: 20pt;"  class="nav-link" href="/index.html#contact">Contact</a>
-                </li>
-            </ul>
-        </div>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg ml-2 navbars">
+      <a class="site-title navbar-brand mx-5" href="/index.html"
+        >Treyson Grange</a
+      >
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a style="padding-left: 20pt" class="nav-link" href="#about"
+              >About</a
+            >
+          </li>
+          <li class="nav-item">
+            <a style="padding-left: 20pt" class="nav-link" href="#experience"
+              >Experience</a
+            >
+          </li>
+          <li class="nav-item">
+            <a style="padding-left: 20pt" class="nav-link" href="#portfolio"
+              >Portfolio</a
+            >
+          </li>
+          <li class="nav-item">
+            <a style="padding-left: 20pt" class="nav-link" href="#contact"
+              >Contact</a
+            >
+          </li>
+
+          <div id="dark-mode-toggle" class="toggle-button">
+            <i class="px-5 py-1 fa-fix fa-solid fa-moon fa-2x"></i>
+            <i
+              class="px-5 py-1 fa-fix fa-fix fa-solid fa-sun fa-2x"
+              style="display: none"
+            ></i>
+          </div>
+        </ul>
+      </div>
     </nav>
     <div class="container my-5">
-        <h1>Plant Tracker</h1>
-        <p>This was my final project for CS 2410, Introduction to Event Driven Programming and GUI's.</p>
-        <p>Requirements included:</p>
-        <ul>
-            <li>Use MVVM (Model view viewmodel architecture pattern)</li>  
-            <li>App should use the navigation component</li>  
-            <li>Data persists throughout subsequent app executions, meaning I had database integration</li>        
-            <li>Custom App Icon</li>
-            <li>App is actually useful</li>
-        </ul>
-        <p>Given these requirements I decided to create this app that would help me keep track of specific information that houseplants need</p>
-        <video controls width="100%" height="100%">
-            <source src="Mute.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
+      <h1>Plant Tracker</h1>
+      <p>
+        This was my final project for CS 2410, Introduction to Event Driven
+        Programming and GUI's.
+      </p>
+      <p>Requirements included:</p>
+      <ul>
+        <li>Use MVVM (Model view viewmodel architecture pattern)</li>
+        <li>App should use the navigation component</li>
+        <li>
+          Data persists throughout subsequent app executions, meaning I had
+          database integration
+        </li>
+        <li>Custom App Icon</li>
+        <li>App is actually useful</li>
+      </ul>
+      <p>
+        Given these requirements I decided to create this app that would help me
+        keep track of specific information that houseplants need
+      </p>
+      <video controls width="100%" height="100%">
+        <source src="Mute.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
     </div>
 
-
-
-</body>
+    <script src="/main.js"></script>
+    <script src="/darkmode.js"></script>
+    <script
+      src="https://kit.fontawesome.com/ce1945717a.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
