@@ -3,7 +3,12 @@ const body = document.body;
 const modeIcon = document.getElementById("mode-icon");
 
 const isDarkMode = localStorage.getItem("darkModeEnabled") === "true";
-
+/**
+ * Function setDarkMode
+ * checks if localStorage has it as darkmode or not and changes it based on that.
+ * Input: enabled: boolean
+ * Output: Null
+ */
 function setDarkMode(enabled) {
   if (enabled) {
     body.classList.add("dark-mode");

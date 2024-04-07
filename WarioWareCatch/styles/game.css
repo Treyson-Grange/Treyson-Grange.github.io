@@ -1,0 +1,122 @@
+body {
+  margin: 0;
+}
+
+#game {
+  margin: auto;
+  display: block;
+  width: 800px;
+  height: 800px;
+  border-style: solid;
+  border-width: 1px;
+  background-color: rgb(37, 37, 77);
+  font-size: 40px;
+  color: #fff;
+}
+
+#game .screen {
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+#game .screen.active {
+  display: block;
+}
+
+#main-menu {
+  padding-top: 1em;
+  cursor: pointer;
+  font-size: 0.75em;
+}
+
+ul.menu {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+ul.menu li {
+  margin: 0.8em 0;
+}
+
+ul.menu li button {
+  font-family: Arial, sans-serif;
+  font-size: 0.6em;
+  color: #ffffff;
+  width: 20em;
+  height: 3em;
+  background: #7e0073;
+  border: 0.3em solid rgb(62, 0, 68);
+  border-radius: 0.5em;
+  box-shadow: 0.2em 0.2em 0.3em rgb(0, 0, 0);
+}
+
+ul.menu li button:hover {
+  background: #a32ff0;
+}
+
+ul.menu li button:active {
+  color: #cecef6;
+  background: rgb(0, 0, 0);
+}
+
+#game div h1 {
+  font-size: 1em;
+  text-align: center;
+}
+
+#high-scores ol {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+#game div p {
+  font-size: 0.5em;
+}
+
+#about p {
+  text-align: center;
+}
+.styled-input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+.container {
+  background-color: #7e0073;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 40px;
+}
+.control {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.control .action {
+  font-weight: bold;
+}
+
+.control .key {
+  color: #000000;
+}
+
+.change-key {
+  font-size: 18px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.change-key:hover {
+  color: #000000;
+}
